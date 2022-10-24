@@ -12,6 +12,7 @@ body {
   margin: auto;
   border: 1px solid black;
   margin-bottom: 30px;
+  background-color: #fbfcff;
 }
 
 header {
@@ -24,6 +25,7 @@ header {
 h1 {
   font-weight: 500;
   font-size: 2rem;
+  color: #fbfcff;
 }
 
 .card {
@@ -49,7 +51,7 @@ h1 {
   padding: 3px;
   border-radius: 10px;
   border-width: 1px;
-  background-color: white;
+  background-color: #d0ccd0;
 }
 
 .question {
@@ -62,6 +64,12 @@ h1 {
   background-color: #274156;
   color: #fbfcff;
   border-radius: 5px;
+}
+
+.AnswerButton:hover {
+  cursor: pointer;
+  background-color: #fbfcff;
+  color: #274156;
 }
 
 .bookmark {
@@ -86,7 +94,7 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-  background-color: lightblue;
+  background-color: #1c6e8c;
 }
 
 nav {
@@ -98,9 +106,10 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: #fbfcff;
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: #605856;
 }

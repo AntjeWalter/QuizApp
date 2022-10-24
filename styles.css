@@ -9,19 +9,107 @@
 }
 
 body {
-  width: 90%;
   margin: auto;
   border: 1px solid black;
+  margin-bottom: 30px;
+  background-color: #fbfcff;
 }
 
 header {
   display: flex;
   justify-content: center;
-  background-color: rgb(102, 212, 249);
+  background-color: #1c6e8c;
   padding: 15px;
 }
 
 h1 {
   font-weight: 500;
   font-size: 2rem;
+  color: #fbfcff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 2px solid black;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.card ul {
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  gap: 3px;
+}
+
+.card ul li button {
+  padding: 3px;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: #d0ccd0;
+}
+
+.question {
+  margin: 20px;
+}
+
+.AnswerButton {
+  margin: 20px 20px 50px 20px;
+  padding: 5px;
+  background-color: #274156;
+  color: #fbfcff;
+  border-radius: 5px;
+}
+
+.AnswerButton:hover {
+  cursor: pointer;
+  background-color: #fbfcff;
+  color: #274156;
+}
+
+.bookmark {
+  width: 60px;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+}
+
+.answer {
+  margin: 0px 20px 50px 20px;
+}
+
+.bookmarkTwo {
+  width: 40px;
+  position: absolute;
+  top: -8px;
+  right: 0px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #1c6e8c;
+}
+
+nav {
+  display: flex;
+  bottom: 0;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fbfcff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #605856;
 }

@@ -4,65 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./components/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <h1>Quiz App</h1>
+      <h1 class="header">Quiz App</h1>
     </header>
 
-    <section class="card closed">
-      <p class="question">Question 1</p>
-      <button class="AnswerButton">Show Answer</button>
-      <ul>
-        <li><button>#html</button></li>
-        <li><button>#flexbox</button></li>
-        <li><button>#css</button></li>
+    <section class="card">
+      <p class="card__question">Question 1</p>
+      <button class="card__answerButton">Show Answer</button>
+      <ul class="card__tags">
+        <li class="card__tagitem"><button>#html</button></li>
+        <li class="card__tagitem"><button>#flexbox</button></li>
+        <li class="card__tagitem"><button>#css</button></li>
       </ul>
-      <img src="./Bookmark_icon.svg.png" alt="bookmark" class="bookmark" />
-    </section>
-
-    <section class="card open">
-      <p class="question">Question 1</p>
-      <button class="AnswerButton">Hide Answer</button>
-      <ul>
-        <li><button>#html</button></li>
-        <li><button>#flexbox</button></li>
-        <li><button>#css</button></li>
-      </ul>
-      <p class="answer">flex direction</p>
       <img
-        src="./icon-bookmark-0.jpeg"
-        alt="bookmark unfilled"
-        class="bookmarkTwo"
+        src="./Bookmark_icon.svg.png"
+        alt="bookmark"
+        class="card__bookmarkFilled"
       />
     </section>
 
-    <section class="card closed">
-      <p class="question">Question 2</p>
-      <button class="AnswerButton">Show Answer</button>
+    <section class="card">
+      <p class="card__question">Question 1</p>
+      <button class="card__answerButton">Hide Answer</button>
       <ul>
-        <li><button>#html</button></li>
-        <li><button>#flexbox</button></li>
-        <li><button>#css</button></li>
+        <li class="card__tagitem"><button>#html</button></li>
+        <li class="card__tagitem"><button>#flexbox</button></li>
+        <li class="card__tagitem"><button>#css</button></li>
       </ul>
-      <img src="./Bookmark_icon.svg.png" alt="bookmark" class="bookmark" />
+      <p class="card__answer-open">flex direction</p>
+      <img
+        src="./icon-bookmark-0.jpeg"
+        alt="bookmark unfilled"
+        class="card__bookmarkUnfilled"
+      />
     </section>
 
-    <footer>
-      <nav>
+    <section class="card">
+      <p class="card__question">Question 2</p>
+      <button class="card__answerButton">Show Answer</button>
+      <ul>
+        <li class="card__tagitem"><button>#html</button></li>
+        <li class="card__tagitem"><button>#flexbox</button></li>
+        <li class="card__tagitem"><button>#css</button></li>
+      </ul>
+      <img
+        src="./Bookmark_icon.svg.png"
+        alt="bookmark"
+        class="card__bookmarkFilled"
+      />
+    </section>
+
+    <footer class="footer">
+      <nav class="footer__navigation">
         <a href="index.html"
-          ><img src="./faq.png" alt="question icon" class="questionSite"
+          ><img
+            src="./faq.png"
+            alt="question icon"
+            class="footer__navigationQuestionSite"
         /></a>
         <a href="bookmarks.html"
           ><img
             src="./Bookmark_icon.svg.png"
             alt="bookmark icon"
-            class="bookmarkSite"
+            class="footer__navigationBookmarkSite"
         /></a>
         <a href="#"
-          ><img src="./benutzer.png" alt="question icon" class="profileSite"
+          ><img
+            src="./benutzer.png"
+            alt="question icon"
+            class="footer__navigationProfileSite"
         /></a>
       </nav>
     </footer>

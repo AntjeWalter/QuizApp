@@ -5,7 +5,6 @@
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  /*  */
 }
 
 body {
@@ -15,7 +14,7 @@ body {
   background-color: #fbfcff;
 }
 
-header {
+.header {
   display: flex;
   justify-content: center;
   background-color: #1c6e8c;
@@ -47,18 +46,18 @@ h1 {
   gap: 3px;
 }
 
-.card ul li button {
-  padding: 3px;
+.card__tagitem {
+  padding: 1px;
   border-radius: 10px;
   border-width: 1px;
   background-color: #d0ccd0;
 }
 
-.question {
+.card__question {
   margin: 20px;
 }
 
-.AnswerButton {
+.card__answerButton {
   margin: 20px 20px 50px 20px;
   padding: 5px;
   background-color: #274156;
@@ -72,18 +71,18 @@ h1 {
   color: #274156;
 }
 
-.bookmark {
+.card__bookmarkFilled {
   width: 60px;
   position: absolute;
   top: -20px;
   right: -10px;
 }
 
-.answer {
+.card__answer-open {
   margin: 0px 20px 50px 20px;
 }
 
-.bookmarkTwo {
+.card__bookmarkUnfilled {
   width: 40px;
   position: absolute;
   top: -8px;

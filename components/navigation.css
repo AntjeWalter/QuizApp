@@ -1,0 +1,44 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #1c6e8c;
+}
+
+.footer__navigation {
+  display: flex;
+  bottom: 0;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.footer__navigation a:hover {
+  text-decoration: underline;
+  color: #605856;
+}
+
+.footer__navigationQuestionSite {
+  width: 35px;
+  margin: 5px;
+}
+
+.footer__navigationQuestionSite--highlighted {
+  width: 45px;
+  border: 3px solid #fbfcff;
+  border-radius: 30%;
+}
+
+.footer__navigationBookmarkSite {
+  width: 45px;
+}
+
+.footer__navigationBookmarkSite--highlighted {
+  width: 45px;
+  border: 3px solid #fbfcff;
+  border-radius: 30%;
+}
+
+.footer__navigationProfileSite {
+  width: 35px;
+  margin: 5px;
+}

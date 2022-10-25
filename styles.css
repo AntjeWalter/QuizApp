@@ -1,0 +1,16 @@
+@import "./components/card.css";
+@import "./components/navigation.css";
+@import "./components/global.css";
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #1c6e8c;
+  padding: 15px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fbfcff;
+}

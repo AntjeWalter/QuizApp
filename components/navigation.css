@@ -1,44 +1,44 @@
-.footer {
+footer {
   position: fixed;
   width: 100%;
   bottom: 0;
   background-color: #1c6e8c;
 }
 
-.footer__navigation {
+.navigation {
   display: flex;
   bottom: 0;
   justify-content: space-around;
   margin: 10px;
 }
 
-.footer__navigation a:hover {
+.navigation a:hover {
   text-decoration: underline;
   color: #605856;
 }
 
-.footer__navigationQuestionSite {
+.navigation__QuestionSite {
   width: 35px;
   margin: 5px;
 }
 
-.footer__navigationQuestionSite--highlighted {
+.navigation__QuestionSite--highlighted {
   width: 45px;
   border: 3px solid #fbfcff;
   border-radius: 30%;
 }
 
-.footer__navigationBookmarkSite {
+.navigation__BookmarkSite {
   width: 45px;
 }
 
-.footer__navigationBookmarkSite--highlighted {
+.navigation__BookmarkSite--highlighted {
   width: 45px;
   border: 3px solid #fbfcff;
   border-radius: 30%;
 }
 
-.footer__navigationProfileSite {
+.navigation__ProfileSite {
   width: 35px;
   margin: 5px;
 }

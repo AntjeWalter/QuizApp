@@ -1,4 +1,4 @@
-.card {
+.quizcard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +8,7 @@
   border-radius: 5px;
 }
 
-.card__tags {
+.quizcard__tags {
   display: flex;
   list-style-type: none;
   position: absolute;
@@ -17,18 +17,18 @@
   gap: 3px;
 }
 
-.card__tagitem {
+.quizcard__tag-item {
   padding: 1px;
   border-radius: 10px;
   border-width: 1px;
   background-color: #d0ccd0;
 }
 
-.card__question {
+.quizcard__question {
   margin: 20px;
 }
 
-.card__answerButton {
+.quizcard__answerButton {
   margin: 20px 20px 50px 20px;
   padding: 5px;
   background-color: #274156;
@@ -36,24 +36,24 @@
   border-radius: 5px;
 }
 
-.card__answerButton:hover {
+.quizcard__answerButton:hover {
   cursor: pointer;
   background-color: #fbfcff;
   color: #274156;
 }
 
-.card__bookmarkFilled {
+.quizcard__bookmarkFilled {
   width: 60px;
   position: absolute;
   top: -20px;
   right: -10px;
 }
 
-.card__answer-open {
+.quizcard__answer-open {
   margin: 0px 20px 50px 20px;
 }
 
-.card__bookmarkUnfilled {
+.quizcard__bookmarkUnfilled {
   width: 40px;
   position: absolute;
   top: -8px;

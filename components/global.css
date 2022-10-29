@@ -1,10 +1,15 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../Raleway/Raleway-VariableFont_wght.ttf");
+}
+
 *,
 ::after,
 ::before {
   box-sizing: border-box;
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
+  font-family: Raleway;
 }
 
 body {

@@ -42,11 +42,19 @@
   color: #274156;
 }
 
+.quizcard__bookmark {
+  border: none;
+}
+
+.quizcard__bookmarkUnfilled:hover {
+  cursor: pointer;
+}
+
 .quizcard__bookmarkFilled {
-  width: 60px;
+  width: 40px;
   position: absolute;
-  top: -20px;
-  right: -10px;
+  top: -8px;
+  right: 0px;
 }
 
 .quizcard__answer-open {
@@ -55,6 +63,17 @@
 
 .quizcard__bookmarkUnfilled {
   width: 40px;
+  position: absolute;
+  top: -8px;
+  right: 0px;
+}
+
+.revealAnswer {
+  display: none;
+}
+
+.fa-bookmark {
+  font-size: 2rem;
   position: absolute;
   top: -8px;
   right: 0px;

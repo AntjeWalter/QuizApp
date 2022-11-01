@@ -17,3 +17,29 @@ body {
   margin-bottom: 80px;
   background-color: #fbfcff;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #1c6e8c;
+  padding: 15px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fbfcff;
+}
+
+.buttonDarkMode {
+  margin: 20px;
+  background-color: rgb(49, 45, 45);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.dark-mode {
+  background-color: rgb(49, 45, 45);
+  color: white;
+}

@@ -1,6 +1,7 @@
 @import "./components/quizcard.css";
 @import "./components/navigation.css";
 @import "./components/global.css";
+@import "./components/profile.css";
 
 .header {
   display: flex;

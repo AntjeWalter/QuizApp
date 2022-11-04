@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./js/index.js" defer></script>
+    <script src="./js/form.js" defer></script>
     <script
       src="https://kit.fontawesome.com/68e44deb6f.js"
       crossorigin="anonymous"
@@ -20,15 +20,15 @@
 
     <form class="form">
       <label for="newCard">New Question:<br /></label>
-      <textarea class="newQuestion" name="newCard" id="newCard"></textarea>
+      <textarea class="newQuestion" name="newCard" id="newCard" data-js="newCard"></textarea>
       <br />
       <label for="newAnswer">New Answer:<br /></label>
-      <textarea class="newAnswer" name="newAnswer" id="newAnswer"></textarea>
+      <textarea class="newAnswer" name="newAnswer" id="newAnswer" data-js="newAnswer"></textarea>
       <br />
       <label for="newTag">New Tag:<br /></label>
-      <input type="text" name="newTag" id="newTag"></input>
+      <input type="text" name="newTag" id="newTag" data-js="tags"></input>
       <br />
-      <button type="submit" class="button">Submit</button>
+      <button type="submit" class="button" data-js="submit-button">Submit</button>
     </form>
 
     <footer>

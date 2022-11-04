@@ -3,6 +3,7 @@ footer {
   width: 100%;
   bottom: 0;
   background-color: #1c6e8c;
+  z-index: 1;
 }
 
 .navigation {

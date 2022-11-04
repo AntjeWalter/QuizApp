@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/68e44deb6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+
+  <body data-js="bodyDarkMode">
+    <header>
+      <h1 class="header">Quiz App</h1>
+    </header>
+
+    <form class="form">
+      <label for="newCard">New Question:<br /></label>
+      <textarea class="newQuestion" name="newCard" id="newCard"></textarea>
+      <br />
+      <label for="newAnswer">New Answer:<br /></label>
+      <textarea class="newAnswer" name="newAnswer" id="newAnswer"></textarea>
+      <br />
+      <label for="newTag">New Tag:<br /></label>
+      <input type="text" name="newTag" id="newTag"></input>
+      <br />
+      <button type="submit" class="button">Submit</button>
+    </form>
+
+    <footer>
+      <nav class="navigation">
+        <a href="index.html"
+          ><img
+            src="./icons/circle-question-regular.svg"
+            alt="question icon"
+            class="navigation__QuestionSite"
+        /></a>
+        <a href="bookmarks.html"
+          ><img
+            src="./icons/bookmark-regular.svg"
+            alt="bookmark icon"
+            class="navigation__BookmarkSite"
+        /></a>
+        <a href="form.html"
+          ><img
+            src="./icons/circle-question-regular.svg"
+            alt="new card form"
+            class="navigation__newCardSite--highlighted"
+          />
+        </a>
+        <a href="profile.html"
+          ><img
+            src="./icons/user-regular.svg"
+            alt="question icon"
+            class="navigation__ProfileSite"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>

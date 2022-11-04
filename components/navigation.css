@@ -39,6 +39,17 @@ footer {
   margin: 3px;
 }
 
+.navigation__newCardSite {
+  width: 30px;
+  margin: 5px;
+}
+
+.navigation__newCardSite--highlighted {
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 35px;
+}
+
 .navigation__ProfileSite {
   width: 25px;
   margin: 5px;

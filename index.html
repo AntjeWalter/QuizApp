@@ -17,7 +17,7 @@
       <h1 class="header">Quiz App</h1>
     </header>
 
-    <section class="quizcard">
+    <section class="quizcard" data-js="quizcard">
       <p class="quizcard__question">Question 1</p>
       <button class="quizcard__answerButton" data-js="quizcard-answer-button">
         Show Answer
@@ -30,8 +30,15 @@
       <p class="quizcard__answer-open revealAnswer" data-js="quizcard-answer">
         CSS Grid
       </p>
-      <button class="quizcard__bookmarkUnfilled">
-        <i class="fa-regular fa-bookmark quizcard__bookmarkUnfilled"></i>
+      <button class="quizcard__bookmark" data-js="bookmark-button">
+        <i
+          class="fa-regular fa-bookmark quizcard__bookmark"
+          data-js="bookmark-icon"
+        ></i>
+        <i
+          class="fa-solid fa-bookmark quizcard__bookmark hidden"
+          data-js="bookmark-icon-filled"
+        ></i>
       </button>
     </section>
 
@@ -48,8 +55,8 @@
       <p class="quizcard__answer-open revealAnswer" data-js="quizcard-answer">
         flex direction
       </p>
-      <button class="quizcard__bookmarkUnfilled">
-        <i class="fa-regular fa-bookmark quizcard__bookmarkUnfilled"></i>
+      <button class="quizcard__bookmark">
+        <i class="fa-regular fa-bookmark quizcard__bookmark"></i>
       </button>
     </section>
 

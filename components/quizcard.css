@@ -42,15 +42,12 @@
   color: #274156;
 }
 
-.quizcard__bookmarkUnfilled {
-  border: none;
-}
-
-.quizcard__bookmarkUnfilled:hover {
+.quizcard__bookmark:hover {
   cursor: pointer;
 }
 
-.quizcard__bookmarkFilled {
+.quizcard__bookmark {
+  border: none;
   width: 40px;
   position: absolute;
   top: -8px;
@@ -59,13 +56,6 @@
 
 .quizcard__answer-open {
   margin: 0px 20px 50px 20px;
-}
-
-.quizcard__bookmarkUnfilled {
-  width: 40px;
-  position: absolute;
-  top: -8px;
-  right: 0px;
 }
 
 .revealAnswer {
@@ -77,4 +67,8 @@
   position: absolute;
   top: -8px;
   right: 0px;
+}
+
+.hidden {
+  display: none;
 }

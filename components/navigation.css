@@ -43,3 +43,9 @@ footer {
   width: 25px;
   margin: 5px;
 }
+
+.navigation__ProfileSite--highlighted {
+  border: 2px solid white;
+  width: 25px;
+  margin: 3px;
+}

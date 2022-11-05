@@ -36,3 +36,29 @@ button.addEventListener("click", (event) => {
   tags2.classList.add("quizcard__tags");
   card.append(tags2);
 });
+
+//Characters left:
+
+const counter_question = document.querySelector('[data-js="counter_question"]');
+const textArea = document.querySelector('[data-js="newCard"]');
+const maxOfNumChars = textArea.getAttribute("maxlength");
+const counter_answer = document.querySelector('[data-js="counter_answer"]');
+const textAreaAnswer = document.querySelector('[data-js="newAnswer"]');
+
+const updateAmountLeft = (value) => {
+  counter_question.innerText = value;
+};
+
+updateAmountLeft(maxOfNumChars);
+
+textArea.addEventListener("input", () => {
+  updateAmountLeft(maxOfNumChars - textArea.value.length);
+  console.log(updateAmountLeft);
+});
+
+/*const countCharacters = () => {
+  let numOfEnteredChars = textArea.value.length;
+  textAreaAnswer.innerText = numOfEnteredChars;
+  let counter_answer = Number(maxOfNumChars) - Number(numOfEnteredChars);
+  counter_answer.textContent = counter_question;
+};*/

@@ -4,10 +4,20 @@
 
 .newQuestion,
 .newAnswer {
+  display: block;
   width: 300px;
   height: 75px;
   margin-top: 5px;
-  margin-bottom: 10px;
+}
+
+.newAnswer__headline {
+  display: block;
+  margin-top: 10px;
+}
+
+.form__character-count {
+  color: gray;
+  display: block;
 }
 
 .button {

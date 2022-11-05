@@ -8,7 +8,7 @@ const darkmode = document.querySelector('[data-js="bodyDarkMode"]');
 const bookmark = quizcard.querySelector('[data-js="bookmark-button"]');
 const bookmarkicon = quizcard.querySelector('[data-js="bookmark-icon"]');
 const bookmarkiconFilled = quizcard.querySelector(
-  '[data-js="bookmark-icon-filled]'
+  '[data-js="bookmark-icon-filled"]'
 );
 
 answerButton.addEventListener("click", () => {

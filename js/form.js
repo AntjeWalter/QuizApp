@@ -49,11 +49,21 @@ const updateAmountLeft = (value) => {
   counter_question.innerText = value;
 };
 
+const updateAmountLeftAnswer = (value) => {
+  counter_answer.innerText = value;
+};
+
 updateAmountLeft(maxOfNumChars);
+updateAmountLeftAnswer(maxOfNumChars);
 
 textArea.addEventListener("input", () => {
   updateAmountLeft(maxOfNumChars - textArea.value.length);
   console.log(updateAmountLeft);
+});
+
+textAreaAnswer.addEventListener("inout", () => {
+  updateAmountLeftAnswer(maxOfNumChars - textAreaAnswer.value.length);
+  console.log(updateAmountLeftAnswer);
 });
 
 /*const countCharacters = () => {

@@ -6,7 +6,7 @@ const button = document.querySelector('[data-js="buttonDarkMode"');
 const darkmode = document.querySelector('[data-js="bodyDarkMode"]');
 
 answerButton.addEventListener("click", () => {
-  answer.classList.toggle("revealAnswer");
+  answer.classList.toggle("quizcard__answer-hide");
 });
 
 button.addEventListener("click", () => {

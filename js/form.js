@@ -27,7 +27,7 @@ button.addEventListener("click", (event) => {
 
   const answer2 = document.createElement("p");
   answer2.textContent = newAnswer;
-  answer2.classList.add("quizcard__answer-open");
+  answer2.classList.add("quizcard__answer");
   card.append(answer2);
 
   const tags2 = document.createElement("li");
@@ -61,14 +61,7 @@ textArea.addEventListener("input", () => {
   console.log(updateAmountLeft);
 });
 
-textAreaAnswer.addEventListener("inout", () => {
+textAreaAnswer.addEventListener("input", () => {
   updateAmountLeftAnswer(maxOfNumChars - textAreaAnswer.value.length);
   console.log(updateAmountLeftAnswer);
 });
-
-/*const countCharacters = () => {
-  let numOfEnteredChars = textArea.value.length;
-  textAreaAnswer.innerText = numOfEnteredChars;
-  let counter_answer = Number(maxOfNumChars) - Number(numOfEnteredChars);
-  counter_answer.textContent = counter_question;
-};*/

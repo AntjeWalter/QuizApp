@@ -40,28 +40,25 @@ button.addEventListener("click", (event) => {
 //Characters left:
 
 const counter_question = document.querySelector('[data-js="counter_question"]');
-const textArea = document.querySelector('[data-js="newCard"]');
-const maxOfNumChars = textArea.getAttribute("maxlength");
 const counter_answer = document.querySelector('[data-js="counter_answer"]');
+const textArea = document.querySelector('[data-js="newCard"]');
 const textAreaAnswer = document.querySelector('[data-js="newAnswer"]');
+const maxOfNumChars = textArea.getAttribute("maxlength");
 
-const updateAmountLeft = (value) => {
-  counter_question.innerText = value;
+const updateAmountLeft = (target, value) => {
+  target.innerText = maxOfNumChars - value;
 };
-
-const updateAmountLeftAnswer = (value) => {
-  counter_answer.innerText = value;
-};
-
-updateAmountLeft(maxOfNumChars);
-updateAmountLeftAnswer(maxOfNumChars);
 
 textArea.addEventListener("input", () => {
-  updateAmountLeft(maxOfNumChars - textArea.value.length);
-  console.log(updateAmountLeft);
+  const numOfEnteredChars = textArea.value.length;
+  const counter = maxOfNumChars - numOfEnteredChars;
+  counter_question.innerText = counter;
+  updateAmountLeft(counter_question, numOfEnteredChars);
 });
 
 textAreaAnswer.addEventListener("input", () => {
-  updateAmountLeftAnswer(maxOfNumChars - textAreaAnswer.value.length);
-  console.log(updateAmountLeftAnswer);
+  const numOfEnteredChars = textAreaAnswer.value.length;
+  const counter = maxOfNumChars - numOfEnteredChars;
+  counter_answer.innerText = counter;
+  updateAmountLeft(counter_answer, numOfEnteredChars);
 });

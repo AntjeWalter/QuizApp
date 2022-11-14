@@ -12,7 +12,7 @@ const bookmarkiconFilled = quizcard.querySelector(
 );
 
 answerButton.addEventListener("click", () => {
-  answer.classList.toggle("revealAnswer");
+  answer.classList.toggle("quizcard__answer-hide");
 });
 
 button.addEventListener("click", () => {

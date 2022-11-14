@@ -3,6 +3,7 @@ footer {
   width: 100%;
   bottom: 0;
   background-color: #1c6e8c;
+  z-index: 1;
 }
 
 .navigation {
@@ -37,6 +38,18 @@ footer {
   border: 2px solid white;
   width: 25px;
   margin: 3px;
+}
+
+.navigation__newCardSite {
+  width: 30px;
+  margin: 5px;
+}
+
+.navigation__newCardSite--highlighted {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
 .navigation__ProfileSite {

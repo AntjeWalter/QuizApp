@@ -28,10 +28,26 @@
         <li class="quizcard__tag-item"><button>#flexbox</button></li>
         <li class="quizcard__tag-item"><button>#css</button></li>
       </ul>
-      <p class="quizcard__answer-open revealAnswer" data-js="quizcard-answer">
+      <p
+        class="quizcard__answer quizcard__answer-hide"
+        data-js="quizcard-answer"
+      >
         CSS Grid
       </p>
-      <i class="fa-solid fa-bookmark quizcard__bookmark"></i>
+      <button class="bookmark" data-js="bookmark-button">
+        <img
+          src="./icons/bookmark-regular.svg"
+          alt="unfilled bookmark"
+          class=""
+          data-js="bookmark-icon"
+        />
+        <img
+          src="./icons/bookmark-solid.svg"
+          alt="filled bookmark"
+          class="hidden"
+          data-js="bookmark-icon-filled"
+        />
+      </button>
     </section>
 
     <section class="quizcard">
@@ -44,10 +60,26 @@
         <li class="quizcard__tag-item"><button>#flexbox</button></li>
         <li class="quizcard__tag-item"><button>#css</button></li>
       </ul>
-      <p class="quizcard__answer-open revealAnswer" data-js="quizcard-answer">
+      <p
+        class="quizcard__answer quizcard__answer-hide"
+        data-js="quizcard-answer"
+      >
         flex direction
       </p>
-      <i class="fa-solid fa-bookmark quizcard__bookmarkFilled"></i>
+      <button class="bookmark" data-js="bookmark-button">
+        <img
+          src="./icons/bookmark-regular.svg"
+          alt="unfilled bookmark"
+          class=""
+          data-js="bookmark-icon"
+        />
+        <img
+          src="./icons/bookmark-solid.svg"
+          alt="filled bookmark"
+          class="hidden"
+          data-js="bookmark-icon-filled"
+        />
+      </button>
     </section>
 
     <section class="quizcard">
@@ -60,10 +92,26 @@
         <li class="quizcard__tag-item"><button>#flexbox</button></li>
         <li class="quizcard__tag-item"><button>#css</button></li>
       </ul>
-      <p class="quizcard__answer-open revealAnswer" data-js="quizcard-answer">
+      <p
+        class="quizcard__answer quizcard__answer-hide"
+        data-js="quizcard-answer"
+      >
         javaScript
       </p>
-      <i class="fa-solid fa-bookmark quizcard__bookmarkFilled"></i>
+      <button class="bookmark" data-js="bookmark-button">
+        <img
+          src="./icons/bookmark-regular.svg"
+          alt="unfilled bookmark"
+          class=""
+          data-js="bookmark-icon"
+        />
+        <img
+          src="./icons/bookmark-solid.svg"
+          alt="filled bookmark"
+          class="hidden"
+          data-js="bookmark-icon-filled"
+        />
+      </button>
     </section>
 
     <button type="button" class="buttonDarkMode" data-js="buttonDarkMode">
@@ -84,6 +132,13 @@
             alt="bookmark icon"
             class="navigation__BookmarkSite--highlighted"
         /></a>
+        <a href="form.html"
+          ><img
+            src="./icons/plus-solid.svg"
+            alt="new card form"
+            class="navigation__newCardSite"
+          />
+        </a>
         <a href="profile.html"
           ><img
             src="./icons/user-regular.svg"

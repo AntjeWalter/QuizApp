@@ -1,0 +1,25 @@
+.form {
+  margin: 20px;
+}
+
+.newQuestion,
+.newAnswer {
+  display: block;
+  width: 100%;
+  height: 75px;
+  margin-top: 5px;
+}
+
+.newAnswer__headline {
+  display: block;
+  margin-top: 10px;
+}
+
+.form__character-count {
+  color: gray;
+  display: block;
+}
+
+.button {
+  margin-top: 10px;
+}

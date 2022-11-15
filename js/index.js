@@ -5,9 +5,11 @@ const answerButtons = document.querySelectorAll(
 const quizcard = document.querySelector('[data-js="quizcard"]');
 const button = document.querySelector('[data-js="buttonDarkMode"]');
 const darkmode = document.querySelector('[data-js="bodyDarkMode"]');
-const bookmark = quizcard.querySelector('[data-js="bookmark-button"]');
-const bookmarkicon = quizcard.querySelector('[data-js="bookmark-icon"]');
-const bookmarkiconFilled = quizcard.querySelector(
+const bookmarkButtons = document.querySelectorAll(
+  '[data-js="bookmark-button"]'
+);
+const bookmarkicon = document.querySelectorAll('[data-js="bookmark-icon"]');
+const bookmarkiconFilled = document.querySelectorAll(
   '[data-js="bookmark-icon-filled"]'
 );
 
@@ -21,7 +23,9 @@ button.addEventListener("click", () => {
   darkmode.classList.toggle("dark-mode");
 });
 
-bookmark.addEventListener("click", () => {
-  bookmarkicon.classList.toggle("hidden");
-  bookmarkiconFilled.classList.toggle("hidden");
+bookmarkButtons.forEach((bookmarkButton, index) => {
+  bookmarkButton.addEventListener("click", () => {
+    bookmarkicon[index].classList.toggle("hidden");
+    bookmarkiconFilled[index].classList.toggle("hidden");
+  });
 });

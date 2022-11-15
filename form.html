@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./js/index.js" defer></script>
+    <script src="./js/form.js" defer></script>
     <script
       src="https://kit.fontawesome.com/68e44deb6f.js"
       crossorigin="anonymous"
@@ -18,30 +18,24 @@
       <h1 class="header">Quiz App</h1>
     </header>
 
-    <h2>Your Profile</h2>
+    <form class="form">
+      <label for="newCard">New Question:<br /></label>
+      <textarea class="newQuestion" name="newCard" id="newCard" data-js="newCard" maxlength="150"></textarea>
+      <br />
+      <small class="form__character-count">(Characters left: <span data-js="counter_question">150</span>)</small>
+      <br/>
 
-    <section class="profile">
-      <img
-        src="https://source.unsplash.com/random/girl"
-        alt="profile picture"
-        class="profile__pic"
-      />
-      <ul class="profile__stats">
-        <li>Questions in App: 3</li>
-        <li>Bookmarks: 2</li>
-        <li>Quiz-Level: 9000</li>
-      </ul>
-    </section>
+      <label for="newAnswer">New Answer:<br /></label>
+      <textarea class="newAnswer" name="newAnswer" id="newAnswer" data-js="newAnswer" maxlength="150"></textarea>
+      <br />
+      <small class="form__character-count">(Characters left: <span data-js="counter_answer">150</span>)</small>
+      <br />
 
-    <p class="quote inspiration">Cheesy inspirational quote:</p>
-    <p class="quote">
-      “Tell me and I forget, teach me and I may remember, involve me and I
-      learn.” - Benjamin Franklin
-    </p>
-
-    <button type="button" class="buttonDarkMode" data-js="buttonDarkMode">
-      Dark Mode
-    </button>
+      <label for="newTag">New Tag:<br /></label>
+      <input type="text" name="newTag" id="newTag" data-js="tags"></input>
+      <br />
+      <button type="submit" class="button" data-js="submit-button">Submit</button>
+    </form>
 
     <footer>
       <nav class="navigation">
@@ -61,13 +55,14 @@
           ><img
             src="./icons/plus-solid.svg"
             alt="new card form"
-            class="navigation__newCardSite"
+            class="navigation__newCardSite--highlighted"
           />
+        </a>
         <a href="profile.html"
           ><img
             src="./icons/user-regular.svg"
             alt="question icon"
-            class="navigation__ProfileSite--highlighted"
+            class="navigation__ProfileSite"
         /></a>
       </nav>
     </footer>

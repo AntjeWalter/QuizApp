@@ -41,7 +41,7 @@ footer {
 }
 
 .navigation__newCardSite {
-  width: 30px;
+  width: 25px;
   margin: 5px;
 }
 
@@ -50,6 +50,7 @@ footer {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  margin-top: 5px;
 }
 
 .navigation__ProfileSite {

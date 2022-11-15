@@ -1,5 +1,5 @@
-const answer = document.querySelector('[data-js="quizcard-answer"]');
-const answerButton = document.querySelector(
+const answers = document.querySelectorAll('[data-js="quizcard-answer"]');
+const answerButtons = document.querySelectorAll(
   '[data-js="quizcard-answer-button"]'
 );
 const quizcard = document.querySelector('[data-js="quizcard"]');
@@ -11,8 +11,10 @@ const bookmarkiconFilled = quizcard.querySelector(
   '[data-js="bookmark-icon-filled"]'
 );
 
-answerButton.addEventListener("click", () => {
-  answer.classList.toggle("revealAnswer");
+answerButtons.forEach((answerButton, index) => {
+  answerButton.addEventListener("click", () => {
+    answers[index].classList.toggle("revealAnswer");
+  });
 });
 
 button.addEventListener("click", () => {
